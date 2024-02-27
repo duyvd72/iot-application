@@ -1,8 +1,16 @@
-# React + Vite
+/To run the App/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Step 1: Use VS Code and clone the repo from git
 
-Currently, two official plugins are available:
+Step 2: Go to /iot-app folder
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Step 3: Open a new Terminal and type 'npm i' (make sure you have installed NodeJs first)
+
+Step 4: Type 'npm run dev'
+
+Step 5: Terminal will display an url like 'local...' => Ctrl + click to that url (or command on Mac)
+
+=====================
+To Edit any data, go to src/pages/Trap/index.jsx and find some comments
+
+Follow the comment to change data that you want.
