@@ -1,5 +1,4 @@
-import { Card, Flex, Image, Progress, Statistic, Typography } from "antd";
-// import styles from "./styles.module.css";
+import { Button, Flex, Image, Progress, Typography } from "antd";
 import { CChart } from "@coreui/react-chartjs";
 import { useState } from "react";
 
@@ -14,67 +13,73 @@ function Trap() {
         justify="space-between"
         align="flex-start"
         gap={24}
-        style={{ width: "70%", margin: "0 auto" }}
+        style={{ width: "90%", margin: "0 auto" }}
       >
         <Flex vertical style={{ width: "70%" }}>
           <Typography.Title level={4}>Environment Data</Typography.Title>
           <Flex justify="space-between" gap={24}>
             {/* Sửa thông số của 4 ô ở phần value của thẻ Statistic bên dưới */}
-            <Card
-              bordered={false}
+            <div
               style={{
-                flex: 1,
+                borderRadius: "10px",
+                padding: "24px",
+                width: "25%",
                 backgroundImage:
                   "linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1",
               }}
             >
-              <Statistic
-                valueStyle={{ alignItems: "flex-end" }}
-                title="Temperature 🌡️"
-                value={25}
-                suffix="℃"
-              />
-            </Card>
-            <Card
-              bordered={false}
+              <Typography.Text style={{ textAlign: "center" }}>
+                Temperature 🌡️
+              </Typography.Text>
+              <Typography.Title level={3} style={{ textAlign: "center" }}>
+                25 ℃
+              </Typography.Title>
+            </div>
+            <div
               style={{
-                flex: 1,
+                borderRadius: "10px",
+                padding: "24px",
+                width: "25%",
                 backgroundImage: "linear-gradient(135deg, #E1DC9A, #51A1A7)",
               }}
             >
-              <Statistic
-                valueStyle={{ alignItems: "flex-end" }}
-                title="Humidity 💧"
-                value={70}
-                suffix="%"
-              />
-            </Card>
-            <Card
-              bordered={false}
+              <Typography.Text style={{ textAlign: "center" }}>
+                Humidity 💧
+              </Typography.Text>
+              <Typography.Title level={3} style={{ textAlign: "center" }}>
+                70%
+              </Typography.Title>
+            </div>
+            <div
               style={{
-                flex: 1,
+                borderRadius: "10px",
+                padding: "24px",
+                width: "25%",
                 backgroundImage: "linear-gradient(315deg, #7A59B7, #EBEDEB)",
               }}
             >
-              <Statistic
-                valueStyle={{ alignItems: "flex-end" }}
-                title="Adhesive plates left 🥅"
-                value={1}
-              />
-            </Card>
-            <Card
-              bordered={false}
+              <Typography.Text style={{ textAlign: "center" }}>
+                Adhesive plates left 🥅
+              </Typography.Text>
+              <Typography.Title level={3} style={{ textAlign: "center" }}>
+                1
+              </Typography.Title>
+            </div>
+            <div
               style={{
-                flex: 1,
+                borderRadius: "10px",
+                padding: "24px",
+                width: "25%",
                 backgroundImage: "linear-gradient(315deg, #38D020, #FBD598)",
               }}
             >
-              <Statistic
-                valueStyle={{ alignItems: "flex-end" }}
-                title="Fruit flies 🪰"
-                value={70}
-              />
-            </Card>
+              <Typography.Text style={{ textAlign: "center" }}>
+                Fruit flies 🪰
+              </Typography.Text>
+              <Typography.Title level={3} style={{ textAlign: "center" }}>
+                70
+              </Typography.Title>
+            </div>
           </Flex>
           <Typography.Title level={4} style={{ marginTop: "20px" }}>
             Recommendation
@@ -85,7 +90,7 @@ function Trap() {
             plate available!
           </Typography.Text>
         </Flex>
-        <Flex style={{ width: "30%" }} justify="flex-end">
+        <Flex style={{ width: "30%" }} justify="center">
           {/* Sửa ảnh thì copy address url của ảnh rồi sửa vào thuộc tính src bên dưới */}
           <Image
             width={300}
@@ -96,8 +101,8 @@ function Trap() {
           />
         </Flex>
       </Flex>
-      <Flex style={{ margin: "20px auto", width: "70%" }} gap={24}>
-        <Flex style={{ width: "70%" }}>
+      <Flex style={{ margin: "20px auto", width: "90%" }} gap={24}>
+        <Flex style={{ width: "70%" }} vertical gap={12}>
           {/* Sửa chart ở đây, dễ hiểu có thể tự mò :D */}
           <CChart
             style={{ width: "100%" }}
@@ -164,6 +169,9 @@ function Trap() {
               },
             }}
           />
+          <Typography.Text italic style={{ textAlign: "center" }}>
+            Fruit fly quantity
+          </Typography.Text>
         </Flex>
         <Flex justify="flex-end" style={{ width: "30%" }} align="flex-start">
           <Flex vertical>
@@ -186,6 +194,10 @@ function Trap() {
             />
           </Flex>
         </Flex>
+      </Flex>
+      <Flex gap={24} justify="center" style={{ margin: "0 0 20px 0" }}>
+        <Button type="primary">Other Traps</Button>
+        <Button type="primary">Replace new adhesive plate</Button>
       </Flex>
     </Flex>
   );
