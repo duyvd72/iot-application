@@ -192,12 +192,12 @@ function Trap() {
               width={"100%"}
               alt=""
             />
+            <Flex gap={24} justify="center" style={{ margin: "20px 0" }}>
+              <Button type="primary">Other Traps</Button>
+              <Button type="primary">Replace new adhesive plate</Button>
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
-      <Flex gap={24} justify="center" style={{ margin: "0 0 20px 0" }}>
-        <Button type="primary">Other Traps</Button>
-        <Button type="primary">Replace new adhesive plate</Button>
       </Flex>
     </Flex>
   );
