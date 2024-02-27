@@ -1,0 +1,25 @@
+.navItem {
+  display: flex;
+  justify-content: center;
+  margin: 12px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.navItem:hover {
+  color: #333;
+  background-color: #e4e4e4;
+  transition: 0.2s ease-in;
+}
+
+.navItem:last-child {
+  font-size: 16px;
+}
+
+.navItem:last-child:hover {
+  color: red;
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
